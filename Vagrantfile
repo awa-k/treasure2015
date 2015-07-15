@@ -9,8 +9,14 @@ Vagrant.configure(2) do |config|
     t.vm.network "private_network", ip: "192.168.50.230"
 
     t.vm.provider "virtualbox" do |vb|
-      vb.name = "treasure2015"
+      vb.name   = "treasure2015"
       vb.memory = 1024
+    end
+
+    t.vm.provision "puppet" do |puppet|
+      puppet.manifests_path = "puppet/manifests"
+      puppet.manifest_file  = "treasure2015.pp"
+      puppet.module_path    = "puppet/modules"
     end
   end
 end

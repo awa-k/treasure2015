@@ -1,0 +1,70 @@
+[elrepo-x86_64]
+name=elrepo-x86_64
+baseurl=http://www.ftp.ne.jp/Linux/RPMS/elrepo/elrepo/el6/x86_64
+enabled=<%= @enable_elrepo %>
+priority=99
+gpgcheck=0
+
+
+[elrepo_kernel-x86_64]
+name=elrepo_kernel-x86_64
+baseurl=http://www.ftp.ne.jp/Linux/RPMS/elrepo/kernel/el6/x86_64
+enabled=<%= @enable_elrepo_kernel %>
+priority=99
+gpgcheck=0
+
+
+[epel-x86_64]
+name=epel-x86_64
+baseurl=http://ftp.riken.jp/Linux/fedora/epel/6/x86_64
+enabled=<%= @enable_epel %>
+priority=99
+gpgcheck=0
+
+
+[mysql56_community-x86_64]
+name=mysql56_community-x86_64
+baseurl=http://repo.mysql.com/yum/mysql-5.6-community/el/6/x86_64
+enabled=<%= @enable_mysql56_community %>
+priority=99
+gpgcheck=0
+
+
+[puppetlabs_deps-x86_64]
+name=puppetlabs_deps-x86_64
+baseurl=http://yum.puppetlabs.com/el/6/dependencies/x86_64
+enabled=<%= @enable_puppetlabs_deps %>
+priority=99
+gpgcheck=0
+
+
+[puppetlabs_products-x86_64]
+name=puppetlabs_products-x86_64
+baseurl=http://yum.puppetlabs.com/el/6/products/x86_64
+enabled=<%= @enable_puppetlabs_products %>
+priority=99
+gpgcheck=0
+
+
+[remi-x86_64]
+name=remi-x86_64
+baseurl=http://remi.kazukioishi.net/enterprise/6/remi/x86_64
+enabled=<%= @enable_remi %>
+priority=99
+gpgcheck=0
+
+
+[remi_php56-x86_64]
+name=remi_php56-x86_64
+baseurl=http://remi.kazukioishi.net/enterprise/6/php56/x86_64
+enabled=<%= @enable_remi_php56 %>
+priority=99
+gpgcheck=0
+
+
+[rpmforge-x86_64]
+name=rpmforge-x86_64
+baseurl=http://ftp.riken.jp/Linux/repoforge/redhat/el6/en/x86_64/rpmforge
+enabled=<%= @enable_rpmforge %>
+priority=99
+gpgcheck=0
